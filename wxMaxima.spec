@@ -27,7 +27,9 @@ komputerowej Maxima.
 %setup -q
 
 %build
-%{configure}
+%{configure}\
+	--with-wx-config=/usr/bin/wx-gtk2-ansi-config
+
 %{__make}
 
 %install
