@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 install -D wxmaxima.desktop $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
 sed -e "s@Application;Utility;X-Red-Hat-Base;X-Red-Hat-Base-Only;@Science;Math;@g" -i $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
 
-install -D maxima-new.png $RPM_BUILD_ROOT/%{_pixmapsdir}/maxima-new.png
+install -D maxima-new.png $RPM_BUILD_ROOT%{_pixmapsdir}/maxima-new.png
 %find_lang %{name}
 
 %clean
