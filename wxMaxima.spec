@@ -1,12 +1,12 @@
 Summary:	wxWidgets interface for maxima
 Summary(pl):	Interfejs do maximy u¿ywaj±cy wxWidgets
 Name:		wxMaxima
-Version:	0.6.5
+Version:	0.7.0
 Release:	1
 License:	GPL
 Group:		Applications/Math
 Source0:	http://dl.sourceforge.net/wxmaxima/%{name}-%{version}.tar.gz
-# Source0-md5:	7190a0a2154e3305ea15edf408bb558f
+# Source0-md5:	29232209c2b5b4ef35f6d9e36b3810f3
 URL:		http://wxmaxima.sourceforge.net/
 BuildRequires:	libxml2-devel
 BuildRequires:	wxGTK2-devel
