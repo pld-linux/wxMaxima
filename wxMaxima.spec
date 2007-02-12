@@ -1,5 +1,5 @@
 Summary:	wxWidgets interface for maxima
-Summary(pl):	Interfejs do maximy u¿ywaj±cy wxWidgets
+Summary(pl.UTF-8):   Interfejs do maximy uÅ¼ywajÄ…cy wxWidgets
 Name:		wxMaxima
 Version:	0.7.1
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wxMaxima is a wxWidgets interface for the computer algebra system
 Maxima.
 
-%description -l pl
-wxMaxima jest bazuj±cym na wxWidgets interfejsem dla systemu algebry
+%description -l pl.UTF-8
+wxMaxima jest bazujÄ…cym na wxWidgets interfejsem dla systemu algebry
 komputerowej Maxima.
 
 %prep
