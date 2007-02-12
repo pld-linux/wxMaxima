@@ -1,5 +1,5 @@
 Summary:	wxWidgets interface for maxima
-Summary(pl.UTF-8):   Interfejs do maximy używający wxWidgets
+Summary(pl.UTF-8):	Interfejs do maximy używający wxWidgets
 Name:		wxMaxima
 Version:	0.7.1
 Release:	1
