@@ -1,12 +1,12 @@
 Summary:	wxWidgets interface for maxima
 Summary(pl.UTF-8):	Interfejs do maximy używający wxWidgets
 Name:		wxMaxima
-Version:	0.7.2
+Version:	0.7.5
 Release:	1
 License:	GPL
 Group:		Applications/Math
 Source0:	http://dl.sourceforge.net/wxmaxima/%{name}-%{version}.tar.gz
-# Source0-md5:	4a0c6099a60d5f54e262cc505d8caca7
+# Source0-md5:	469014a84aca3f334d1e19042208d54b
 URL:		http://wxmaxima.sourceforge.net/
 BuildRequires:	libxml2-devel
 BuildRequires:	wxGTK2-devel
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 install -D wxmaxima.desktop $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
 sed -e "s@Application;Utility;X-Red-Hat-Base;X-Red-Hat-Base-Only;@Science;Math;@g" -i $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
 
-install -D maxima-new.png $RPM_BUILD_ROOT%{_pixmapsdir}/maxima-new.png
+install -D wxmaxima.png $RPM_BUILD_ROOT%{_pixmapsdir}/wxmaxima.png
 %find_lang %{name}
 
 %clean
@@ -49,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README AUTHORS
 %attr(755,root,root) %{_bindir}/wxmaxima
 %{_datadir}/wxMaxima
-%{_pixmapsdir}/maxima-new.png
+%{_pixmapsdir}/wxmaxima.png
 %{_desktopdir}/wxmaxima.desktop
