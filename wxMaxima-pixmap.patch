@@ -1,0 +1,12 @@
+diff -ur wxMaxima-0.8.6/data/Makefile.am wxMaxima-0.8.6.new/data/Makefile.am
+--- wxMaxima-0.8.6/data/Makefile.am	2009-11-12 19:52:21.000000000 +0000
++++ wxMaxima-0.8.6.new/data/Makefile.am	2010-09-15 23:34:03.951722310 +0100
+@@ -1,4 +1,7 @@
+ wxmaximadatadir = ${datadir}/wxMaxima
+-wxmaximadata_DATA = tips.txt wxmathml.lisp wxmaxima.png autocomplete.txt
++wxmaximadata_DATA = tips.txt wxmathml.lisp autocomplete.txt
++
++pixmapsdir = ${datadir}/pixmaps
++pixmaps_DATA = wxmaxima.png
+ 
+ EXTRA_DIST = tips.txt wxmathml.lisp wxmaxima.png Info.plist.in PkgInfo autocomplete.txt

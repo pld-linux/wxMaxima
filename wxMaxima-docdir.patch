@@ -1,0 +1,10 @@
+--- Makefile.am.orig	2010-09-16 12:36:47.684186133 +0100
++++ Makefile.am	2010-09-16 12:37:09.314201328 +0100
+@@ -15,7 +15,6 @@
+              art/wxmac-doc.icns art/wxmac.icns               \
+              art/maximaicon.ico
+ 
+-docdir = ${datadir}/wxMaxima
+ doc_DATA = README COPYING
+ 
+ wxMaxima.app: all
