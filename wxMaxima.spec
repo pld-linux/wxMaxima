@@ -2,7 +2,7 @@ Summary:	wxWidgets interface for maxima
 Summary(pl.UTF-8):	Interfejs do maximy używający wxWidgets
 Name:		wxMaxima
 Version:	12.01.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Math
 Source0:	http://downloads.sourceforge.net/wxmaxima/%{name}-%{version}.tar.gz
@@ -43,10 +43,15 @@ komputerowej Maxima.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install -D wxmaxima.desktop $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
-sed -e "s@Application;Utility;X-Red-Hat-Base;X-Red-Hat-Base-Only;@Science;Math;@g" -i $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
+
+sed -e "s@Application;Utility;X-Red-Hat-Base;X-Red-Hat-Base-Only;@Science;Math;@g" wxmaxima.desktop \
+	> $RPM_BUILD_ROOT%{_desktopdir}/wxmaxima.desktop
+
+ln -s %{_pixmapsdir}/wxmaxima.png $RPM_BUILD_ROOT%{_datadir}/wxMaxima
 
 %find_lang %{name}
 
