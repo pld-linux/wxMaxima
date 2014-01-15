@@ -2,7 +2,7 @@ Summary:	wxWidgets interface for maxima
 Summary(pl.UTF-8):	Interfejs do maximy używający wxWidgets
 Name:		wxMaxima
 Version:	12.01.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Math
 Source0:	http://downloads.sourceforge.net/wxmaxima/%{name}-%{version}.tar.gz
