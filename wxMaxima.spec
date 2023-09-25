@@ -2,7 +2,7 @@ Summary:	wxWidgets interface for maxima
 Summary(pl.UTF-8):	Interfejs do maximy używający wxWidgets
 Name:		wxMaxima
 Version:	12.01.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Math
 Source0:	http://downloads.sourceforge.net/wxmaxima/%{name}-%{version}.tar.gz
@@ -13,7 +13,7 @@ URL:		http://wxmaxima.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libxml2-devel
-BuildRequires:	wxGTK2-unicode-devel
+BuildRequires:	wxGTK3-unicode-devel
 BuildRequires:	wxWidgets-devel
 Requires:	maxima >= 1:5.11.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,7 +37,7 @@ komputerowej Maxima.
 %{__autoheader}
 %{__automake}
 %{configure}\
-	--with-wx-config=%{_bindir}/wx-gtk2-unicode-config
+	--with-wx-config=%{_bindir}/wx-gtk3-unicode-config
 
 %{__make}
 
